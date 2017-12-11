@@ -1,0 +1,42 @@
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 650px){
+  .hero{
+    width: 60%;
+    order:-2;
+  }
+  .header__title {
+    font-size: 4em;
+  }
+  .weather{
+    width: 40%;
+    order: -1;
+  }
+  .top-news{
+    width: 60%
+  }
+  .scores{
+    width: 40%
+  }
+}
+@media (min-width: 900px) {
+
+  .content {
+    width: 900px;
+    margin: auto;
+  }
+  .top-news{
+    width:40%;
+    order: -2;
+    height: inherit;
+  }
+  .scores{
+    width: 60%;
+  }
+  .weather{
+    order:0;
+  }
+}
